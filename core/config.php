@@ -1,12 +1,13 @@
 <?php session_start();
 //config
-$dbHost='DBHOST';
-$dbUser='DBUSER';
-$dbPass='DBPASS';
-$dbName='DBNAME';
+$dbHost='localhost';
+$dbUser='root';
+$dbPass='root';
+$dbName='devana';
+$dbPcon=1;
 $title='Project - Devana V0.01a';
 $shortTitle='devana';
-$location='http://76573.ok8.in/';
+$location='http://localhost/devana/';
 //misc vars
 $benchmark=true;
 $tracker='';

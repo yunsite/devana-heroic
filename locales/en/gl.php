@@ -53,7 +53,8 @@ $gl['modules']=array(
   9=>array('name'=>'Marketplace', 'description'=>'Trade components and resources.'),
   10=>array('name'=>'Gold Storage', 'description'=>'Stores extra gold.'),
   11=>array('name'=>'Lumber Storage', 'description'=>'Stores extra lumber.'),
-  12=>array('name'=>'Iron Storage', 'description'=>'Stores extra iron.')
+  12=>array('name'=>'Iron Storage', 'description'=>'Stores extra iron.'),
+  13=>array('name'=>'House', 'description'=>'Afford extra workers.')
  ),
  1=>array(
   0=>array('name'=>'Gold mine', 'description'=>'Gold mines produce gold.'),
@@ -68,7 +69,8 @@ $gl['modules']=array(
   9=>array('name'=>'Marketplace', 'description'=>'Trade components and resources.'),
   10=>array('name'=>'Gold Storage', 'description'=>'Stores extra gold.'),
   11=>array('name'=>'Lumber Storage', 'description'=>'Stores extra lumber.'),
-  12=>array('name'=>'Iron Storage', 'description'=>'Stores extra iron.')
+  12=>array('name'=>'Iron Storage', 'description'=>'Stores extra iron.'),
+  13=>array('name'=>'House', 'description'=>'Afford extra workers.')
  ),
  2=>array(
   0=>array('name'=>'Gold mine', 'description'=>'Gold mines produce gold.'),
@@ -83,7 +85,8 @@ $gl['modules']=array(
   9=>array('name'=>'Marketplace', 'description'=>'Trade components and resources.'),
   10=>array('name'=>'Gold Storage', 'description'=>'Stores extra gold.'),
   11=>array('name'=>'Lumber Storage', 'description'=>'Stores extra lumber.'),
-  12=>array('name'=>'Iron Storage', 'description'=>'Stores extra iron.')
+  12=>array('name'=>'Iron Storage', 'description'=>'Stores extra iron.'),
+  13=>array('name'=>'House', 'description'=>'Afford extra workers.')
  )
 );
 //components per faction

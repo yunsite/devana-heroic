@@ -58,7 +58,8 @@ $gl['modules']=array(
   9=>array('name'=>'市场', 'description'=>'交易资源和物品。'),
   10=>array('name'=>'金库', 'description'=>'存放多余的金资源。'),
   11=>array('name'=>'木材库', 'description'=>'存放多余的木材资源。'),
-  12=>array('name'=>'铁仓库', 'description'=>'存放多余的铁资源。')
+  12=>array('name'=>'铁仓库', 'description'=>'存放多余的铁资源。'),
+  13=>array('name'=>'房屋', 'description'=>'增加开发度。')
  ),
  1=>array(
   0=>array('name'=>'金魔法阵', 'description'=>'金魔法阵产生资源『金』。'),
@@ -73,7 +74,8 @@ $gl['modules']=array(
   9=>array('name'=>'市场', 'description'=>'交易资源和物品。'),
   10=>array('name'=>'金库', 'description'=>'存放多余的金资源。'),
   11=>array('name'=>'木材库', 'description'=>'存放多余的木材资源。'),
-  12=>array('name'=>'铁仓库', 'description'=>'存放多余的铁资源。')
+  12=>array('name'=>'铁仓库', 'description'=>'存放多余的铁资源。'),
+  13=>array('name'=>'房屋', 'description'=>'增加开发度。')
  ),
  2=>array(
   0=>array('name'=>'金矿', 'description'=>'金矿产生资源『金』。'),
@@ -88,7 +90,8 @@ $gl['modules']=array(
   9=>array('name'=>'市场', 'description'=>'交易资源和物品。'),
   10=>array('name'=>'金库', 'description'=>'存放多余的金资源。'),
   11=>array('name'=>'木材库', 'description'=>'存放多余的木材资源。'),
-  12=>array('name'=>'铁仓库', 'description'=>'存放多余的铁资源。')
+  12=>array('name'=>'铁仓库', 'description'=>'存放多余的铁资源。'),
+  13=>array('name'=>'房屋', 'description'=>'增加开发度。')
 //  0=>array('name'=>'Gold mine', 'description'=>'Gold mines produce gold.'),
 //  1=>array('name'=>'Lumber mill', 'description'=>'Lumber mills harvest lumber.'),
 //  2=>array('name'=>'Iron mine', 'description'=>'Iron mines produce iron.'),

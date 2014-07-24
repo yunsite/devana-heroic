@@ -28,7 +28,7 @@ if (isset($_SESSION[$shortTitle.'User']['id'], $_GET['action']))
  switch ($_GET['action'])
  {
   case 'get':
-   if ((isset($node->data['id']))&&($node->data['id']==$_SESSION[$shortTitle.'User']['id']))
+   if ((isset($node->data['user']))&&($node->data['user']==$_SESSION[$shortTitle.'User']['id']))
    {
     echo '<div class="node" style="background-image: url(\'templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/modules/'.$node->data['faction'].'/nodeBackground.jpg\');">';
     include 'templates/'.$_SESSION[$shortTitle.'User']['template'].'/resources.php';

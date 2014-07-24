@@ -3,6 +3,7 @@
 <script type="text/javascript" src="core/core.js"></script>
 <script type="text/javascript"> var labels=new Array(<?php echo '"'.$ui['water'].'", "'.$ui['land'].'"'; ?>); </script>
  <head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <script type="text/javascript">
    var position=new Array(0, 0);
    function setSector(x, y)

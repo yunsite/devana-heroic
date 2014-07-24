@@ -1,26 +1,40 @@
 <?php
 if ($benchmark) $startTime=misc::microTime();
 $db=new db();
-$db->create($dbHost, $dbUser, $dbPass, $dbName);
+$db->create($dbHost, $dbUser, $dbPass, $dbName, $dbPcon);
 class db
 {
  private $db;
- public function create($dbHost, $dbUser, $dbPass, $dbName)
+ public $qrynum;
+ public function create($dbHost, $dbUser, $dbPass, $dbName, $dbPcon)
  {
-  $this->db=new mysqli($dbHost, $dbUser, $dbPass, $dbName);
+ 	if($dbPcon) $this->db=new mysqli('p:'.$dbHost, $dbUser, $dbPass, $dbName);
+  else $this->db=new mysqli($dbHost, $dbUser, $dbPass, $dbName);
   if ($this->db->connect_error) die('Connect Error ('.$this->db->connect_errno .') '.$mysqli->connect_error);
   //$this->db->query("set global transaction isolation level serializable", $this->db);
  }
  public function query($query)
  {
-  if ($result=$this->db->query($query)) return $result;
-  else echo $this->db->error;
+  if ($result=$this->db->query($query))
+  {
+  	$this->qrynum ++;
+  	return $result;
+  }
+  if($this->db->error){
+  	try {    
+    	throw new Exception("MySQL error ".$this->db->error." <br> Query:<br> $query", $this->db->errno);    
+    } catch(Exception $e ) {
+    	echo "Error No: ".$e->getCode(). " - ". $e->getMessage() . "<br >";
+    	echo nl2br($e->getTraceAsString());
+    }
+  }
+  
  }
  public static function fetch($result)
  {
   return $result->fetch_array(MYSQLI_ASSOC);
  }
- public function real_escape_string($string)
+ public function real_escape_string($string)//这应该改成静态的
  {
   return $this->db->real_escape_string($string);
  }
@@ -615,6 +629,9 @@ class node
       break;
       case 'harvest':
        $this->production[$game['modules'][$this->data['faction']][$module['module']]['outputResource']]+=$game['modules'][$this->data['faction']][$module['module']]['ratio']*$module['input'];
+      break;
+      case 'extend':
+       $this->storage[$game['modules'][$this->data['faction']][$module['module']]['extendResource']]+=$game['modules'][$this->data['faction']][$module['module']]['ratio'];
       break;
      }
  }
@@ -1463,6 +1480,16 @@ class node
      $this->modules[$entry['slot']]['module']=$entry['module'];
      $db->query('update modules set module="'.$entry['module'].'" where node="'.$this->data['id'].'" and slot="'.$entry['slot'].'"');
      if ($db->affected_rows()==-1) $ok=0;
+     else//人口和仓库需要即时增加
+     {
+     	if ($game['modules'][$this->data['faction']][$entry['module']]['type'] == 'extend')
+     	{
+     	 $extend = $game['modules'][$this->data['faction']][$entry['module']];
+     	 $this->resources[$extend['extendResource']]['value'] += $extend['ratio'];
+     	 $db->query('update resources set value="'.$this->resources[$extend['extendResource']]['value'].'" where node="'.$this->data['id'].'" and id="'.$extend['extendResource'].'"');
+     	 if ($db->affected_rows()==-1) {$ok=0;};
+     	}
+     }
     }
     else//remove module
     {

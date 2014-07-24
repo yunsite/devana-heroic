@@ -384,6 +384,25 @@ if (isset($_SESSION[$shortTitle.'User']['id'], $_GET['action'], $_GET['nodeId'],
         }
        echo '</div>';
       break;
+      default:
+       echo '
+         <div>
+          <div class="cell"><div class="module" style="background-image: url(\'templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/modules/'.$node->data['faction'].'/moduleBackground.jpg\');"><img style="width: 300px;" src="templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/modules/'.$node->data['faction'].'/'.$mid.'.png" /></div></div>
+          <div class="cell">
+           <div><div class="cell" style="font-weight: bold;">'.$gl['modules'][$node->data['faction']][$mid]['name'].'</div></div>
+           <div><div class="cell">'.$gl['modules'][$node->data['faction']][$mid]['description'].'</div></div>
+           <div>
+            <div class="inline">
+             <div class="cell">'.$ui['ratio'].': </div>
+             <div class="cell">'.$module['ratio'].'</div>
+            </div>
+           </div>
+           <div>
+            <div style="text-align: right; border-top: 1px solid black; margin-top: 5px; padding-top: 5px;"><a class="link" href="module.php?action=remove&nodeId='.$node->data['id'].'&slotId='.$_GET['slotId'].'">'.$ui['removeModule'].'</a></div>
+           </div>
+          </div>
+         </div>';
+      break;
      }
      echo '</div></div>';
     }
@@ -433,25 +452,29 @@ if (isset($_SESSION[$shortTitle.'User']['id'], $_GET['action'], $_GET['nodeId'],
        <div class="cell"><div class="module" style="background-image: url(\'templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/modules/'.$node->data['faction'].'/moduleBackground.jpg\');"><img style="width: 300px;" src="templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/modules/'.$node->data['faction'].'/'.$mid.'.png" /></div></div>
        <div class="cell">
         <div><div class="cell" style="font-weight: bold;">'.$gl['modules'][$node->data['faction']][$mid]['name'].'</div></div>
-        <div><div class="cell">'.$gl['modules'][$node->data['faction']][$mid]['description'].'</div></div>
+        <div><div class="cell">'.$gl['modules'][$node->data['faction']][$mid]['description'].'</div></div>';
+     if (isset($module['inputResource'])) echo '
         <div>
          <div class="inline">
           <div class="cell">'.$ui['input'].': </div>
           <div class="cell"><img class="resource" src="templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/resources/'.$module['inputResource'].'.png" title="'.$gl['resources'][$module['inputResource']]['name'].'"></div>
          </div>
-        </div>
+        </div>';
+     echo '
         <div>
          <div class="inline">
           <div class="cell">'.$ui['ratio'].': </div>
           <div class="cell">'.$module['ratio'].'</div>
          </div>
-        </div>
+        </div>';
+     if (isset ($module['maxInput'])) echo '
         <div>
          <div class="inline">
           <div class="cell">'.$ui['maxInput'].': </div>
           <div class="cell">'.$module['maxInput'].'</div>
          </div>
-        </div>
+        </div>';
+     echo '
         <div>
          <div class="inline">
           <div class="cell">'.$ui['maxInstances'].': </div>

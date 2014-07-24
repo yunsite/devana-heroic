@@ -7,6 +7,7 @@ if ($benchmark)
 {
  $endTime=misc::microTime();
  echo '<div class="benchmark">'.ceil(($endTime-$startTime)*1000).' '.$ui['ms'].'</div>';
+ echo '<div class="benchmark">'.$db->qrynum.' queries</div>';
 }
 ?>
 </div>

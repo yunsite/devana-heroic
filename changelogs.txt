@@ -1,0 +1,16 @@
+烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫
+烫                                                                                      烫
+烫                            Devana created by Andrei Busuioc                          烫
+烫                          Heroic modded by Nemoma & Yoshiko_G                         烫
+烫                                      Changelogs                                      烫
+烫                                                                                      烫
+烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫
+
+v0.01  2014-07-24  Yoshiko_G
+此更新对config.php有改动，请勿无脑覆盖。
+--为数据库错误增加了详细显示。 {core/ core.php;}
+--修正了游戏中出现第二座城后，玩家无法查看城市的BUG。	{templates/default/	node.php;}
+--修正了汉语界面地图页面乱码的问题。	{templates/default/	grid.php;}
+--添加了每次执行的数据库查询数的显示。	{core/	core.php;}{templates/default/	footer.php;}	
+--添加了可自由开关的数据库持久连接功能。	{core/	core.php;	config.php;}
+--添加了“房屋”建筑，每座增加城市20开发度。	{core/	core.php;	game.php;}	{locales/	gl.php;	x2} {templates/default/	module.php;} {templates/default/images/modules/	13.png;	x3}
