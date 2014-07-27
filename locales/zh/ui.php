@@ -201,6 +201,7 @@ $ui['nodeMoveDisabled']='town movement disabled';
 $ui['invalidGridSector']='地图地区非法。';
 $ui['maxNodesReached']='已经达到最高城镇数目！';
 $ui['notEnoughResources']='资源不足。';
+$ui['notEnoughWorkers']='空余开发度不足';
 $ui['requirementsNotMet']='没有达到需求。';
 $ui['notEnoughStorageResource']='存储空间不足。';
 $ui['notEnoughUpkeepResource']='食物不足。';

@@ -1,16 +1,27 @@
-Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚
-Г┐╚                                                                                      Г┐╚
-Г┐╚                            Devana created by Andrei Busuioc                          Г┐╚
-Г┐╚                          Heroic modded by Nemoma & Yoshiko_G                         Г┐╚
-Г┐╚                                      Changelogs                                      Г┐╚
-Г┐╚                                                                                      Г┐╚
-Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚Г┐╚
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+лл                                                                                      лл
+лл                            Devana created by Andrei Busuioc                          лл
+лл                          Heroic modded by Nemoma & Yoshiko_G                         лл
+лл                                      Changelogs                                      лл
+лл                                                                                      лл
+лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл
+
+v0.03  2014-07-26  Yoshiko_G
+--ю╘ЁД╬╡л╛вйт╢╣д╫╗жЧюЮпмextendря╬╜мЙЁиё╨тз╫╗тЛмЙЁий╠р╩╢нптлМ╪свйт╢ё╛тз╡ПЁЩй╠╪Ух╔вйт╢║ё  {core/  core.php;}  {locales/ ui.php; x2}
+--╟яcore.php╟╢юЮ╡П╥жЁихТ╦инд╪Ч║ё  {core/  core.php;}  {core/class/  activation.class.php; alliance.class.php; blacklist.class.php; db_mysqli.class.php; grid.class.php; message.class.php; misc.class.php; node.class.php; user.class.php;}
+--лМ╪сак║╟д╔╥╩║╠╫╗жЧё╛ц©вЫтЖ╪сЁгйп50йЁнО©Б╢Ф║ё  {core/  game.php;}  {locales/ gl.php; x2}  {templates/default/images/modules/ 14.png; x3}
+
+v0.02  2014-07-25  Yoshiko_G
+--╟яйЩ╬щ©БюЮ╡П╥жЁи╣╔╤юнд╪Ч║ё  {core/  db_mysqli.class.php;}
+--пчуЩака╫╦ЖЁгйп╡╩дэм╛й╠тЛ╠Ь╩РуътЛв╟╠╦╣дBUG║ё  {core/  core.php; db_mysqli.class.php;}
+--й╣ожак╣ьм╪╫ГцФотй╬а╙цкцШ╣д╧╕дэ║ё  {core/  core.php;}
+--тзтЛ╠Ь╫ГцФтЖ╪сакв╟╠╦йЩд©отй╬║ё  {templates/default/ module.php;}
 
 v0.01  2014-07-24  Yoshiko_G
-Ф╜╓Ф⌡╢Ф√╟Е╞╧config.phpФ°┴Ф■╧Е┼╗О╪▄Х╞╥Е▀©Ф≈═Х└▒Х╕├Г⌡√Ц─┌
---Д╦╨Ф∙╟Ф█╝Е╨⌠И■≥Х╞╞Е╒·Е┼═Д╨├Х╞╕Г╩├Ф≤╬Г╓╨Ц─┌ {core/ core.php;}
---Д©╝Ф╜ёД╨├Ф╦╦Ф┬▐Д╦╜Е┤╨Г▌╟Г╛╛Д╨▄Е╨╖Е÷▌Е░▌О╪▄Г▌╘Е╝╤Ф≈═ФЁ∙Ф÷╔Г°▀Е÷▌Е╦┌Г └BUGЦ─┌	{templates/default/	node.php;}
---Д©╝Ф╜ёД╨├Ф╠┴Х╞╜Г∙▄И²╒Е°╟Е⌡╬И║╣И²╒Д╧╠Г═│Г └И≈╝И╒≤Ц─┌	{templates/default/	grid.php;}
---Ф╥╩Е┼═Д╨├Ф╞▐Ф╛║Ф┴╖Х║▄Г └Ф∙╟Ф█╝Е╨⌠Ф÷╔Х╞╒Ф∙╟Г └Ф≤╬Г╓╨Ц─┌	{core/	core.php;}{templates/default/	footer.php;}	
---Ф╥╩Е┼═Д╨├Е▐╞Х┤╙Г■╠Е╪─Е┘ЁГ └Ф∙╟Ф█╝Е╨⌠Ф▄│Д╧┘Х©·Ф▌╔Е┼÷Х┐╫Ц─┌	{core/	core.php;	config.php;}
---Ф╥╩Е┼═Д╨├Б─°Ф┬©Е╠▀Б─²Е╩╨Г╜▒О╪▄Ф╞▐Е╨╖Е╒·Е┼═Е÷▌Е╦┌20Е╪─Е▐▒Е╨╕Ц─┌	{core/	core.php;	game.php;}	{locales/	gl.php;	x2} {templates/default/	module.php;} {templates/default/images/modules/	13.png;	x3}
+╢к╦Эпб╤тconfig.phpсп╦д╤╞ё╛гКнПнчдт╦╡╦г║ё
+--н╙йЩ╬щ©Б╢МнСтЖ╪сакоЙо╦отй╬║ё {core/ core.php;}
+--пчуЩаксно╥жпЁЖож╣з╤ЧвЫЁг╨Сё╛мФ╪рнч╥╗╡И©╢Ёгйп╣дBUG║ё {templates/default/ node.php;}
+--пчуЩак╨╨сО╫ГцФ╣ьм╪рЁцФбрбК╣днйлБ║ё  {templates/default/ grid.php;}
+--лМ╪сакц©╢нж╢пп╣дйЩ╬щ©Б╡Ия╞йЩ╣дотй╬║ё  {core/  core.php;}{templates/default/ footer.php;}  
+--лМ╪сак©ивтси©╙╧ь╣дйЩ╬щ©БЁж╬ца╛╫с╧╕дэ║ё  {core/  core.php; config.php;}
+--лМ╪сак║╟╥©нщ║╠╫╗жЧё╛ц©вЫтЖ╪сЁгйп20©╙╥╒╤х║ё  {core/  core.php; game.php;}  {locales/ gl.php; x2}  {templates/default/ module.php;}  {templates/default/images/modules/ 13.png; x3}

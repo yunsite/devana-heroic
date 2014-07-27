@@ -201,6 +201,7 @@ $ui['nodeMoveDisabled']='town movement disabled';
 $ui['invalidGridSector']='invalid map sector';
 $ui['maxNodesReached']='max number of towns has already been reached';
 $ui['notEnoughResources']='not enough resources';
+$ui['notEnoughWorkers']='cannot dismiss busy workers';
 $ui['requirementsNotMet']='requirements not met';
 $ui['notEnoughStorageResource']='not enough storage space';
 $ui['notEnoughUpkeepResource']='not enough food';

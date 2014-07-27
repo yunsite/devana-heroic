@@ -336,6 +336,15 @@ if (isset($_SESSION[$shortTitle.'User']['id'], $_GET['action'], $_GET['nodeId'],
         echo '</div>';
        }
        echo '<div style="border-bottom: 1px solid black;"><div>';
+			 $cc=0;
+       foreach ($node->components as $key=>$component)
+       {
+        echo '<div class="cell">'.$component['value'].'</div><div class="cell"><img class="resource" src="templates/'.$_SESSION[$shortTitle.'User']['template'].'/images/components/'.$node->data['faction'].'/'.$key.'.png" title="'.$gl['components'][$node->data['faction']][$key]['name'].'"></div>';
+        $cc++;
+        if ($cc==9) echo '</div><div>';
+       }
+       echo '</div></div>';
+       echo '<div style="border-bottom: 1px solid black;"><div>';
        $uc=0;
        foreach ($node->units as $key=>$unit)
        {

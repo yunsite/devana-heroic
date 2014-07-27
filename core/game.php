@@ -347,6 +347,14 @@ $game['modules']=array(
 		2=>array('resource'=>2, 'value'=>600)
 	 ),
 	 'requirements'=>array()
+	),
+	14=>array('type'=>'extend', 'inputResource'=>3, 'extendResource'=>5, 'ratio'=>50, 'maxInput'=>0, 'duration'=>10, 'salvage'=>0.5, 'removeDuration'=>1, 'maxInstances'=>3,
+	 'cost'=>array(
+		0=>array('resource'=>0, 'value'=>800),
+		1=>array('resource'=>1, 'value'=>1000),
+		2=>array('resource'=>2, 'value'=>800)
+	 ),
+	 'requirements'=>array()
 	)
  ),
  1=>array(//faction 1 modules
@@ -503,6 +511,14 @@ $game['modules']=array(
 		2=>array('resource'=>2, 'value'=>600)
 	 ),
 	 'requirements'=>array()
+	),
+	14=>array('type'=>'extend', 'inputResource'=>3, 'extendResource'=>5, 'ratio'=>50, 'maxInput'=>0, 'duration'=>10, 'salvage'=>0.5, 'removeDuration'=>1, 'maxInstances'=>3,
+	 'cost'=>array(
+		0=>array('resource'=>0, 'value'=>800),
+		1=>array('resource'=>1, 'value'=>1000),
+		2=>array('resource'=>2, 'value'=>800)
+	 ),
+	 'requirements'=>array()
 	)
  ),
  2=>array(//faction 2 modules
@@ -657,6 +673,14 @@ $game['modules']=array(
 		0=>array('resource'=>0, 'value'=>400),
 		1=>array('resource'=>1, 'value'=>800),
 		2=>array('resource'=>2, 'value'=>600)
+	 ),
+	 'requirements'=>array()
+	),
+	14=>array('type'=>'extend', 'inputResource'=>3, 'extendResource'=>5, 'ratio'=>50, 'maxInput'=>0, 'duration'=>10, 'salvage'=>0.5, 'removeDuration'=>1, 'maxInstances'=>3,
+	 'cost'=>array(
+		0=>array('resource'=>0, 'value'=>800),
+		1=>array('resource'=>1, 'value'=>1000),
+		2=>array('resource'=>2, 'value'=>800)
 	 ),
 	 'requirements'=>array()
 	)
